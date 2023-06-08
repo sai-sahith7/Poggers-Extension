@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Poggers",
+    "version": "1.1",
+    "description": "This extension helps you get the best deals for raw materials.",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.google.com/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "https://*.deta.dev/*"
+    ],
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "images/icon.png"
+    }
+}
